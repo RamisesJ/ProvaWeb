@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Produtos</title>
+</head>
+
+<body>
+    <h1>Gerenciar Produtos</h1>
+    <nav>
+        <a href="index.html">Voltar</a>
+    </nav>
+
+    <h2>Cadastrar Produto</h2>
+    <form id="produto-form">
+        <input type="hidden" id="produto-id">
+        <input type="text" id="nome" placeholder="Nome" required>
+        <input type="text" id="codigo" placeholder="Código" required>
+        <input type="number" id="preco" placeholder="Preço" required>
+        <input type="text" id="descricao" placeholder="Descrição">
+        <input type="number" id="quantidade" placeholder="Quantidade" required>
+        <button type="submit">Salvar</button>
+        <button type="button" id="cancelar" style="display: none;">Cancelar</button>
+    </form>
+
+    <h2>Lista de Produtos</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>Nome</th>
+                <th>Código</th>
+                <th>Preço</th>
+                <th>Descrição</th>
+                <th>Quantidade</th>
+                <th>Ações</th>
+            </tr>
+        </thead>
+        <tbody id="produto-list">
+        </tbody>
+    </table>
+
+
+    <script src="script-produtos.js"></script>
+</body>
+
+</html>

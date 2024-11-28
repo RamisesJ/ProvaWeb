@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Cliente</title>
+</head>
+
+<body>
+    <h1>Gerenciar Cliente</h1>
+    <nav>
+        <a href="index.html">Voltar</a>
+    </nav>
+
+    <h2>Cadastrar Cliente</h2>
+    <form id="cliente-form">
+        <input type="hidden" id="cliente-id">
+        <input type="text" id="nome" placeholder="Nome" required>
+        <input type="email" id="email" placeholder="E-mail" required>
+        <input type="text" id="telefone" placeholder="Telefone">
+        <input type="text" id="endereco" placeholder="Endereço" required>
+        <button type="submit">Salvar</button>
+        <button type="button" id="cancelar" style="display: none;">Cancelar</button>
+    </form>
+
+    <h2>Lista de Clientes</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>Nome</th>
+                <th>E-mail</th>
+                <th>Telefone</th>
+                <th>Endereço</th>
+                <th>Ação</th>
+            </tr>
+        </thead>
+        <tbody id="clientes-list">
+        </tbody>
+    </table>
+
+
+    <script src="script-clientes.js"></script>
+</body>
+
+</html>
